@@ -30,7 +30,6 @@ hist(x, breaks = 10,
 
 #2g simulasi
 simulasi <- rpois(10000,lambda)
-simulasi
 
 #2h perbandingan
 sum(simulasi>4) / 10000
