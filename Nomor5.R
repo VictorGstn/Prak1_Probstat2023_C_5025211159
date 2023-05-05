@@ -4,7 +4,7 @@ pt(-2.34,df)
 
 #5b
 df <- 6
-pt(1.34,df)
+pt(1.34,df, lower.tail = FALSE)
 
 #5c
 df <- 3
