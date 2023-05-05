@@ -89,7 +89,7 @@ Kerjakanlah menggunakan distribusi T-Student.
 Digunakan pt(-2.34,df) dengan df adalah 6 sehingga menghasilkan 0.02892197.
 
 ### b. Berapa probabilitas terjadinya suatu peristiwa acak X lebih dari 1,34 dengan 6 derajat kebebasan?
-Karena "lebih dari", digunakan lower.tail=FALSE sehingga perhitungan menjadi pt(1.34,df,lower.tail=FALSE) dengan df adalah 6 sehingga menghasilkan 0.88562. 
+Karena "lebih dari", digunakan lower.tail=FALSE sehingga perhitungan menjadi pt(1.34,df,lower.tail=FALSE) dengan df adalah 6 sehingga menghasilkan 0.09666729. 
 
 ### c. Berapa probabilitas terjadinya suatu peristiwa acak X kurang dari -1,23 atau lebih besar dari 1,23 dengan 3 derajat kebebasan?
 Pada perhitungan ini terdapat dua tail yang berbeda. Kurang dari -1.23 menggunakan lower.tail dan lebih besar dari 1,23 tidak menggunakan lower.tail. 
