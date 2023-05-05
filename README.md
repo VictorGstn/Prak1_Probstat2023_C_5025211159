@@ -26,6 +26,8 @@ Nilai simpangan baku dihitung dengan rumus sqrt(n*p*(1.0-p)) dan didapatkan 1.58
 ### f. Gambarkan histogram pendistribusian banyak bayi laki-laki.
 Histogram pada r dibuat dengan cara menghitung densitas keluarnya suatu nilai. Oleh karena itu perlu didapatkan nilai bangkit acak terlebih dahulu dengan menggunakan rbinom. Semakin banyak data yang diberikan maka histogram akan semakin akurat. 
 Bar histogram dipecah menjadi 10 dan agar berukuran proporsional density adalah TRUE dan frequency adalah FALSE. Variabel ylim dan xlim digunakan untuk mengubah angka pada kedua axis.
+![Hist1](.Images/Hist1.png)
+![1](.Images/No1.png)
 
 ## No2
 Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik
