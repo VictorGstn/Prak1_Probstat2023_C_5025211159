@@ -26,8 +26,9 @@ Nilai simpangan baku dihitung dengan rumus sqrt(n*p*(1.0-p)) dan didapatkan 1.58
 ### f. Gambarkan histogram pendistribusian banyak bayi laki-laki.
 Histogram pada r dibuat dengan cara menghitung densitas keluarnya suatu nilai. Oleh karena itu perlu didapatkan nilai bangkit acak terlebih dahulu dengan menggunakan rbinom. Semakin banyak data yang diberikan maka histogram akan semakin akurat. 
 Bar histogram dipecah menjadi 10 dan agar berukuran proporsional density adalah TRUE dan frequency adalah FALSE. Variabel ylim dan xlim digunakan untuk mengubah angka pada kedua axis.
-![Hist1](.Images/Hist1.png)
-![1](.Images/No1.png)
+
+![Hist1](Images/Hist1.png)
+![1](Images/No1.png)
 
 ## No2
 Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik
@@ -52,11 +53,15 @@ Nilai standar deviasi merupakan akar dari lambda yakni 1.341641.
 ### f. Gambarkan histogram pendistribusian banyak banyak kematian akibat kanker tulang untuk pekerja pabrik ban.
 Menggunakan langkah yang sama dengan histogram no 1 maka didapatkan histogram seperti berikut.
 
+![Hist2](Images/Hist2.png)
+
 ### g. Gunakan simulasi untuk memeriksa hasil sebelumnya.
 Dibuat suatu variabel baru bernama simulasi yang menyimpan rpois(10000, lambda). 
 
 ### h. Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda. Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda.
-Untuk mendapatkan jawaban yang  sama dengan pertanyaan 2d dilakukan perhitungan sum(simulasi>4) / 10000 dan didapatkan nilai 0.0373. Dibandingkan dengan jawaban 2d, yakni 0.0364, terdapat selisih sebanyak 0.0009. Selisih ini tidaklah banyak dan dapat dihitung normal.
+Untuk mendapatkan jawaban yang  sama dengan pertanyaan 2d dilakukan perhitungan sum(simulasi>4) / 10000 dan didapatkan nilai 0.0373. Dibandingkan dengan jawaban 2d, yakni 0.0353, terdapat selisih sebanyak 0.002. Selisih ini tidaklah banyak dan dapat dihitung normal.
+
+![2](Images/No2.png)
 
 ## No3
 Diketahui nilai x = 3 dan v = 10. Tentukan:
@@ -66,9 +71,12 @@ Hasil perhitungan probabilitasi tersebut adalah 0.02353326, dihitung menggunakan
 
 ### b. Histogram dari distribusi Chi-Square dengan 500 data acak.
 Data acak diambil dengan d <- rpois(500, lambda) dan dibuat menjadi histogram seperti nomor sebelumnya. Berikut merupakan hasilnya.
+![Hist3](Images/Hist3.png)
 
 ### c. Nilai rataan (μ) dan varian (σ²) dari distribusi Chi-Square.
 Nilai v sama dengan nilai rataan yakni 10 sedangkan nilai varian adalah 2v yakni 20.
+
+![3](Images/No3.png)
 
 ##No4
 Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5.
@@ -81,9 +89,12 @@ Nilai x dicari terlebih dahulu dengan seq(-4, 4, length=100) *sd + mean dilanjut
 ### b. Gambarkan histogram dari distribusi Normal dengan breaks 50
 Karena data sudah ada, histogram tinggal perlu dibuat saja dengan hist(data, breaks = 50).
 
+![Hist4](Images/Hist4.png)
+
 ### c. Nilai varian (σ²) dari hasil data bangkitan acak distribusi Normal.
 Nilai varian dapat dicari menggunakan fungsi var. Dihitung var(data) dan didapatkan nilai 24.86792
 
+![4](Images/No4.png)
 
 ##No5
 Kerjakanlah menggunakan distribusi T-Student.
@@ -115,3 +126,6 @@ qt(0.75/2,df, lower.tail = TRUE) dan qt(0.75/2,df, lower.tail = FALSE) sehihingg
 ### h. Berapa nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan negatif dari nilai t-score tersebut?
 Menggunakan cara yang sama dengan 5g yakni two tailed test. Dilakukan perhitungan qt(0.0333/2,df, lower.tail = TRUE) dan qt(0.0333/2,df, lower.tail = FALSE) sehingga didapatkan nilai -2.264201 dan 2.264201. 
 T-score akan bernilai lebih signifikan jika kurang dari -2.264201 atau lebih dari 2.264201.
+
+![5](Images/No5.png)
+
